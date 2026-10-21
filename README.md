@@ -1,3 +1,5 @@
+<img src=".claude-plugin/icon.png" alt="app-demo-video icon" width="120">
+
 # app-demo-video
 
 A [Claude Code](https://claude.com/claude-code) skill that turns a user journey through your app into a calm,
