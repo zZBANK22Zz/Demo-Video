@@ -135,4 +135,4 @@ docs/                    README GIF and the example's finished video
 
 ## License
 
-[MIT](LICENSE)
+[MIT License](LICENSE) © zZBANK22Zz
