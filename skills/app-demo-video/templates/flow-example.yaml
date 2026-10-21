@@ -1,0 +1,55 @@
+# Example Maestro flow for a demo recording — the patterns that kept the real one
+# reliable while two devices were recording at once. Copy, rename, adapt.
+# Paths (flows/lib/...) are relative to this file's folder.
+appId: com.example.app
+name: Demo — first device
+---
+# 0. Start position. Set it HERE, through Maestro: a Maestro location override outlives
+#    the run and silently wins over `xcrun simctl location set` / `adb emu geo fix`.
+- setLocation:
+    latitude: "7.8804"
+    longitude: "98.3923"
+
+# 1. Wait for the screen, clear dev chrome, mark the moment, let the viewer look.
+- extendedWaitUntil:
+    visible: "Where to?"            # visible text or accessibility label; regex, full match
+    timeout: 30000
+- runFlow: flows/lib/dismiss-dev-warning.yaml
+- runScript: { file: flows/lib/mark.js, env: { MARK: p_home } }
+- runFlow: { file: flows/lib/pause.yaml, env: { PAUSE_MS: 2500 } }
+
+# 2. Type at a readable pace (chunks + short pauses), wait on results, not on a timer.
+- tapOn: { id: "place-search-input" }      # testID → id; add minimal testIDs to inputs/lists
+- inputText: "Old "
+- runFlow: { file: flows/lib/pause.yaml, env: { PAUSE_MS: 350 } }
+- inputText: "Town"
+- extendedWaitUntil:
+    visible: { id: "place-result-0" }
+    timeout: 15000
+- runScript: { file: flows/lib/mark.js, env: { MARK: p_results } }
+- runFlow: { file: flows/lib/pause.yaml, env: { PAUSE_MS: 1800 } }
+- tapOn: { id: "place-result-0" }
+- hideKeyboard                               # keyboards linger over lists; taps land on keys
+
+# 3. Under recording load a tap can land mid-render. Tap until the NEXT screen shows;
+#    the tap is optional so a retry after a slow-but-successful tap does not fail.
+- retry:
+    maxRetries: 3
+    commands:
+      - tapOn: { text: "Confirm", optional: true }
+      - extendedWaitUntil:
+          visible: "Finding a driver.*"
+          timeout: 8000
+- runScript: { file: flows/lib/mark.js, env: { MARK: p_searching } }
+
+# 4. Cross-device: just wait for the state the other device causes (long timeout).
+- extendedWaitUntil:
+    visible: "Driver is on the way"
+    timeout: 180000
+- runScript: { file: flows/lib/mark.js, env: { MARK: p_enroute } }
+
+# 5. Movement: a generated, evenly paced leg (scripts/route_legs.py). Never teleport.
+# - runFlow: flows/generated/leg-trip.yaml
+
+- runFlow: { file: flows/lib/pause.yaml, env: { PAUSE_MS: 5000 } }
+- runScript: { file: flows/lib/mark.js, env: { MARK: p_done } }

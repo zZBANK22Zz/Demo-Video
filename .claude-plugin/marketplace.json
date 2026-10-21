@@ -1,0 +1,13 @@
+{
+  "name": "app-demo-video",
+  "owner": { "name": "zZBANK22Zz" },
+  "description": "Claude Code skill for producing regenerable app demo videos.",
+  "plugins": [
+    {
+      "name": "app-demo-video",
+      "source": "./",
+      "description": "Produce polished, regenerable demo videos of mobile, web and desktop apps.",
+      "version": "1.0.0"
+    }
+  ]
+}

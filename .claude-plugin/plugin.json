@@ -1,0 +1,10 @@
+{
+  "name": "app-demo-video",
+  "version": "1.0.0",
+  "description": "Produce polished, regenerable demo videos of mobile, web and desktop apps: scripted journeys, captions in any language, follow-zoom camera, cursor, click sounds and intro/outro cards.",
+  "author": { "name": "zZBANK22Zz" },
+  "homepage": "https://github.com/zZBANK22Zz/Demo-Video",
+  "repository": "https://github.com/zZBANK22Zz/Demo-Video",
+  "license": "MIT",
+  "keywords": ["demo", "video", "maestro", "playwright", "ffmpeg", "screen-recording", "walkthrough"]
+}

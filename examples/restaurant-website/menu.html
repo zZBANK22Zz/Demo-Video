@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu — Ember &amp; Sage</title>
+  <meta name="description" content="Ember & Sage is a modern wood-fired restaurant serving seasonal plates, natural wines and handmade pasta.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a href="index.html" class="logo">Ember <span>&amp;</span> Sage</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu"><span></span></label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" aria-current="page">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reservations.html" class="btn btn--primary">Book a Table</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1800&q=70&auto=format&fit=crop')">
+      <div class="container">
+        <span class="eyebrow">Autumn Menu 2026</span>
+        <h1>Our Menu</h1>
+        <p class="lead">Cooked over oak and lychee wood. Dishes change with the harvest, so ask your server about today's specials.</p>
+        <div class="breadcrumb"><a href="index.html">Home</a> / Menu</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <nav class="menu-tabs" aria-label="Menu categories">
+          <a href="#starters" class="active">Starters</a>
+          <a href="#mains">Mains</a>
+          <a href="#pasta">Pasta &amp; Flatbread</a>
+          <a href="#desserts">Desserts</a>
+          <a href="#drinks">Drinks</a>
+        </nav>
+
+        <div class="legend">
+          <span><span class="tag tag--sage">V</span> Vegetarian</span>
+          <span><span class="tag tag--sage">VG</span> Vegan</span>
+          <span><span class="tag tag--sage">GF</span> Gluten-free</span>
+          <span><span class="tag">Chef's pick</span> Signature</span>
+        </div>
+
+        <section id="starters" class="menu-section">
+          <div class="menu-section-head"><h2>Starters</h2><p>Small plates to share</p></div>
+          <div class="menu-list">
+            <div class="menu-item">
+              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=200&q=70&auto=format&fit=crop" alt="">
+              <div>
+                <div class="menu-item-head"><h3>Charred Garden Salad</h3><span class="dots"></span><span class="price">฿260</span></div>
+                <p>Grilled baby gem, roasted beets, whipped feta, toasted seeds.</p>
+                <div class="tags"><span class="tag tag--sage">V</span><span class="tag tag--sage">GF</span></div>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://images.unsplash.com/photo-1541529086526-db283c563270?w=200&q=70&auto=format&fit=crop" alt="">
+              <div>
+                <div class="menu-item-head"><h3>Hearth Bread &amp; Butter</h3><span class="dots"></span><span class="price">฿160</span></div>
+                <p>Sourdough from the morning bake, cultured smoked butter, sea salt.</p>
+                <div class="tags"><span class="tag tag--sage">V</span></div>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=200&q=70&auto=format&fit=crop" alt="">
+              <div>
+                <div class="menu-item-head"><h3>Grilled Tiger Prawns</h3><span class="dots"></span><span class="price">฿420</span></div>
+                <p>Chili-garlic glaze, lime leaf oil, charred lemon.</p>
+                <div class="tags"><span class="tag tag--sage">GF</span><span class="tag">Chef's pick</span></div>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=200&q=70&auto=format&fit=crop" alt="">
+              <div>
+                <div class="menu-item-head"><h3>Smoked Eggplant Dip</h3><span class="dots"></span><span class="price">฿220</span></div>
+                <p>Tahini, pomegranate, mint, flame-blistered flatbread.</p>
+                <div class="tags"><span class="tag tag--sage">VG</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="mains" class="menu-section">
+          <div class="menu-section-head"><h2>Mains</h2><p>From the hearth</p></div>
+          <div class="menu-list">
+            <div class="menu-item">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=200&q=70&auto=format&fit=crop" alt="">
+              <div>
+                <div class="menu-item-head"><h3>Ember Ribeye 300g</h3><span class="dots"></span><span class="price">฿1,290</span></div>
+                <p>Dry-aged 28 days, bone marrow butter, charred shallots, fries.</p>
+                <div class="tags"><span class="tag tag--sage">GF</span><span class="tag">Chef's pick</span></div>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=200&q=70&auto=format&fit=crop" alt="">
+              <div>
+                <div class="menu-item-head"><h3>Wood-Roasted Salmon</h3><span class="dots"></span><span class="price">฿680</span></div>
+                <p>Crispy skin, dill beurre blanc, fire-roasted fennel.</p>
+                <div class="tags"><span class="tag tag--sage">GF</span></div>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=200&q=70&auto=format&fit=crop" alt="">
+              <div>
+                <div class="menu-item-head"><h3>Half Spatchcock Chicken</h3><span class="dots"></span><span class="price">฿590</span></div>
+                <p>Lemongrass brine, salsa verde, grilled corn.</p>
+                <div class="tags"><span class="tag tag--sage">GF</span></div>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=200&q=70&auto=format&fit=crop" alt="">
+              <div>
+                <div class="menu-item-head"><h3>Roasted Cauliflower Steak</h3><span class="dots"></span><span class="price">฿380</span></div>
+                <p>Romesco, golden raisins, capers, toasted almonds.</p>
+                <div class="tags"><span class="tag tag--sage">VG</span><span class="tag tag--sage">GF</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="pasta" class="menu-section">
+          <div class="menu-section-head"><h2>Pasta &amp; Flatbread</h2><p>Made by hand, daily</p></div>
+          <div class="menu-list">
+            <div class="menu-item">
+              <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=200&q=70&auto=format&fit=crop" alt="">
+              <div>
+                <div class="menu-item-head"><h3>Sage Brown-Butter Pappardelle</h3><span class="dots"></span><span class="price">฿480</span></div>
+                <p>Crispy sage, roasted pumpkin, aged parmesan.</p>
+                <div class="tags"><span class="tag tag--sage">V</span><span class="tag">Chef's pick</span></div>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=200&q=70&auto=format&fit=crop" alt="">
+              <div>
+                <div class="menu-item-head"><h3>Smoked Crab Linguine</h3><span class="dots"></span><span class="price">฿560</span></div>
+                <p>Blue crab, chili, garlic, lemon, parsley breadcrumbs.</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=200&q=70&auto=format&fit=crop" alt="">
+              <div>
+                <div class="menu-item-head"><h3>Hearth Flatbread</h3><span class="dots"></span><span class="price">฿390</span></div>
+                <p>Smoked tomato, buffalo mozzarella, wild basil.</p>
+                <div class="tags"><span class="tag tag--sage">V</span></div>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=200&q=70&auto=format&fit=crop" alt="">
+              <div>
+                <div class="menu-item-head"><h3>Mushroom &amp; Truffle Flatbread</h3><span class="dots"></span><span class="price">฿450</span></div>
+                <p>Wild mushrooms, taleggio, truffle honey, thyme.</p>
+                <div class="tags"><span class="tag tag--sage">V</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="desserts" class="menu-section">
+          <div class="menu-section-head"><h2>Desserts</h2><p>Something sweet</p></div>
+          <div class="menu-list">
+            <div class="menu-item">
+              <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=200&q=70&auto=format&fit=crop" alt="">
+              <div>
+                <div class="menu-item-head"><h3>Burnt Basque Cheesecake</h3><span class="dots"></span><span class="price">฿240</span></div>
+                <p>Caramelized top, mango coulis.</p>
+                <div class="tags"><span class="tag tag--sage">V</span><span class="tag">Chef's pick</span></div>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=200&q=70&auto=format&fit=crop" alt="">
+              <div>
+                <div class="menu-item-head"><h3>Coconut Sorbet</h3><span class="dots"></span><span class="price">฿180</span></div>
+                <p>Toasted coconut, pandan syrup, lime zest.</p>
+                <div class="tags"><span class="tag tag--sage">VG</span><span class="tag tag--sage">GF</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="drinks" class="menu-section">
+          <div class="menu-section-head"><h2>Drinks</h2><p>Natural wine, cocktails &amp; more</p></div>
+          <div class="menu-list">
+            <div class="menu-item">
+              <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=200&q=70&auto=format&fit=crop" alt="">
+              <div>
+                <div class="menu-item-head"><h3>House Natural Red</h3><span class="dots"></span><span class="price">฿290 / gl</span></div>
+                <p>Light, juicy Gamay from the Loire. Ask for our full wine list.</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=200&q=70&auto=format&fit=crop" alt="">
+              <div>
+                <div class="menu-item-head"><h3>Smoked Old Fashioned</h3><span class="dots"></span><span class="price">฿360</span></div>
+                <p>Bourbon, palm sugar, orange bitters, oak smoke.</p>
+                <div class="tags"><span class="tag">Chef's pick</span></div>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=200&q=70&auto=format&fit=crop" alt="">
+              <div>
+                <div class="menu-item-head"><h3>Lemongrass Iced Tea</h3><span class="dots"></span><span class="price">฿120</span></div>
+                <p>House-brewed, honey, fresh lime. Zero alcohol.</p>
+                <div class="tags"><span class="tag tag--sage">VG</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <p class="center" style="color:var(--muted);font-size:.9rem">Prices in Thai Baht and include VAT. 10% service charge applies. Please tell us about any allergies.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="cta-band">
+          <div>
+            <h2>Hungry already?</h2>
+            <p>Reserve a table and we'll have the fire ready.</p>
+          </div>
+          <a href="reservations.html" class="btn btn--light">Book a Table</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo">Ember <span>&amp;</span> Sage</a>
+          <p style="margin-top:12px">Modern wood-fired kitchen serving seasonal plates and natural wine since 2014.</p>
+          <div class="socials">
+            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V2c1 3 3 5 6 5"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <ul>
+            <li>Tue – Thu: 5 – 10 PM</li>
+            <li>Fri – Sat: 5 – 11 PM</li>
+            <li>Sun: 11 AM – 9 PM</li>
+            <li>Mon: Closed</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <p>Seasonal menus &amp; events, once a month.</p>
+          <form class="newsletter" onsubmit="return false">
+            <label for="nl-email" class="sr-only">Email address</label>
+            <input id="nl-email" type="email" placeholder="you@email.com">
+            <button class="btn btn--primary" type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Ember &amp; Sage. All rights reserved.</span>
+        <span>124 Riverside Lane, Old Town, Bangkok · +66 2 123 4567</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

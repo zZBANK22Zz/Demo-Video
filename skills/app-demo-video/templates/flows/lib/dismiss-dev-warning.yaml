@@ -1,0 +1,12 @@
+# Closes the development build's "Open debugger to view warnings." bar if it is
+# showing — it is dev-only chrome, not part of the app, and has no place in a
+# demo. Taps its × (bottom-right of the bar, same spot on every screen); tapping
+# the bar itself would open the debugger instead.
+appId: com.example.app   # set to your app id (match the flow that calls this)
+---
+- runFlow:
+    when:
+      visible: "Open debugger to view warnings.*"
+    commands:
+      - tapOn:
+          point: "92%,92.9%"

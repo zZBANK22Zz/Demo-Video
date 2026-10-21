@@ -1,0 +1,35 @@
+{
+  "_comment": "Edit config for scripts/edit.py. Paths are relative to this file. See references/config.md.",
+  "name": "demo-final",
+  "raw_name": "demo-raw",
+  "fps": 60,
+  "card_seconds": 3.0,
+  "transition": 0.5,
+  "marks": "out/marks.txt",
+  "work_dir": "out/work",
+  "music": "assets/music.mp3",
+  "music_volume": 0.18,
+  "brand": {
+    "primary": "#0A7A4A",
+    "deep": "#173F30",
+    "tint": "#ECFDF3",
+    "muted": "#475467",
+    "background": ["#E3F4EA", "#F7FBF8"],
+    "logo": "../assets/images/icon.png",
+    "fonts": {
+      "bold": "../node_modules/@expo-google-fonts/inter/700Bold/Inter_700Bold.ttf",
+      "semibold": "../node_modules/@expo-google-fonts/inter/600SemiBold/Inter_600SemiBold.ttf",
+      "regular": "../node_modules/@expo-google-fonts/inter/500Medium/Inter_500Medium.ttf"
+    }
+  },
+  "devices": [
+    { "key": "p", "label": "Passenger app", "color": "#0A7A4A", "raw": "out/p-raw.mp4", "rec_mark": "rec_p" },
+    { "key": "d", "label": "Driver app", "color": "#101828", "raw": "out/d-raw.mp4", "rec_mark": "rec_d" }
+  ],
+  "intro": { "title": "AppName", "tagline": "One line about what it does", "note": "What the viewer is about to watch" },
+  "outro": { "title": "Try AppName", "cta": "Available today" },
+  "segments": [
+    { "focus": "p", "from": ["p_home", -0.2], "to": ["p_home", 3.5], "speed": 1.0, "title": "Home", "subtitle": "Plain sentence: what is happening and why it matters" },
+    { "focus": "d", "from": ["d_offer", -0.5], "to": ["d_offer", 7.0], "speed": 1.0, "title": "Driver gets the job", "subtitle": "Sees fare and route before accepting" }
+  ]
+}

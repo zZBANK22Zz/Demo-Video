@@ -1,0 +1,9 @@
+# A viewer-facing pause. Maestro has no sleep, so this waits for an element that
+# never exists and lets the wait time out quietly.
+# Env: PAUSE_MS
+appId: com.example.app   # set to your app id (match the flow that calls this)
+---
+- extendedWaitUntil:
+    visible: "__demo_pause_never_visible__"
+    timeout: ${PAUSE_MS}
+    optional: true

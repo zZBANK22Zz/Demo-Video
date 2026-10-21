@@ -1,0 +1,40 @@
+{
+  "name": "ember-and-sage-demo",
+  "fps": 30,
+  "card_seconds": 3.0,
+  "transition": 0.45,
+  "music": "assets/music.mp3",
+  "music_volume": 0.18,
+  "click_sound": true,
+  "click_volume": 0.35,
+  "mask_urls": [],
+  "brand": {
+    "kicker": "Restaurant website · UI mockup",
+    "primary": "#B5532C",
+    "deep": "#2B211B",
+    "tint": "#F6E6DC",
+    "muted": "#6F6258",
+    "accent": "#B5532C",
+    "background": ["#F3ECE2", "#FAF6F0"],
+    "fonts": {}
+  },
+  "intro": {
+    "title": "Ember & Sage",
+    "tagline": "A modern wood-fired restaurant website",
+    "note": "A quick tour: menu, story, booking and contact"
+  },
+  "outro": {
+    "title": "Ember & Sage",
+    "cta": "Five pages, one warm experience"
+  },
+  "segments": [
+    { "from": ["s_home", -0.4],    "to": ["s_dishes", -0.2],  "caption": "A warm welcome with booking one click away" },
+    { "from": ["s_dishes", -0.2],  "to": ["s_menu", -0.2],    "caption": "Signature dishes and guest reviews" },
+    { "from": ["s_menu", -0.2],    "to": ["s_tabs", -0.2],    "caption": "The full menu, organized by course" },
+    { "from": ["s_tabs", -0.2],    "to": ["s_about", -0.2],   "speed": 1.2, "caption": "Tabs jump straight to each category" },
+    { "from": ["s_about", -0.2],   "to": ["s_book", -0.2],    "caption": "Meet the people behind the fire" },
+    { "from": ["s_book", -0.2],    "to": ["s_details", -0.2], "caption": "Pick guests, a time slot and seating" },
+    { "from": ["s_details", -0.2], "to": ["s_contact", -0.2], "speed": 1.3, "caption": "Add your details and any special requests" },
+    { "from": ["s_contact", -0.2], "to": ["end", -0.2],       "caption": "Contact info and quick answers to common questions" }
+  ]
+}

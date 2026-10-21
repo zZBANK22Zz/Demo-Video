@@ -1,0 +1,36 @@
+{
+  "name": "demo",
+  "fps": 30,
+  "card_seconds": 3.0,
+  "transition": 0.45,
+  "music": "assets/music.mp3",
+  "music_volume": 0.18,
+  "click_sound": true,
+  "click_volume": 0.35,
+  "mask_urls": [["/t/[^/\\s]+", "/t/…"]],
+  "brand": {
+    "kicker": "Product · Area",
+    "primary": "#1F6F66",
+    "deep": "#13233A",
+    "tint": "#E3F3F0",
+    "muted": "#475467",
+    "accent": "#5B3FD1",
+    "background": ["#E7ECF5", "#F6F4FB"],
+    "fonts": {}
+  },
+  "intro": {
+    "title": "Product name",
+    "tagline": "One line: what it does for the viewer",
+    "note": "What you are about to watch"
+  },
+  "outro": {
+    "title": "Product name",
+    "cta": "One line to act on"
+  },
+  "segments": [
+    { "from": ["s_home", -0.4], "to": ["s_open", -0.4], "caption": "Start where the user already works" },
+    { "from": ["s_open", -0.4], "to": ["s_fill", -0.3], "caption": "One click opens the form" },
+    { "from": ["s_fill", -0.3], "to": ["s_done", -0.2], "speed": 1.2, "caption": "Fill in a few fields and create" },
+    { "from": ["s_done", -0.2], "to": ["end", -0.4], "caption": "The result shows up right away" }
+  ]
+}

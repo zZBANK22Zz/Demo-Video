@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservations — Ember &amp; Sage</title>
+  <meta name="description" content="Ember & Sage is a modern wood-fired restaurant serving seasonal plates, natural wines and handmade pasta.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a href="index.html" class="logo">Ember <span>&amp;</span> Sage</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu"><span></span></label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reservations.html" aria-current="page" class="btn btn--primary">Book a Table</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1800&q=70&auto=format&fit=crop')">
+      <div class="container">
+        <span class="eyebrow">Reservations</span>
+        <h1>Book your table</h1>
+        <p class="lead">Reservations open 30 days in advance. For parties over 8, please contact us for private dining.</p>
+        <div class="breadcrumb"><a href="index.html">Home</a> / Reservations</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container booking-layout">
+        <form class="form-card" onsubmit="return false" aria-labelledby="booking-title">
+          <h2 id="booking-title" style="font-size:1.8rem">Reservation details</h2>
+          <p style="color:var(--muted)">Fields marked * are required.</p>
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="date">Date *</label>
+              <input id="date" type="date" value="2026-10-24" required>
+            </div>
+            <div class="field">
+              <label for="guests">Guests *</label>
+              <select id="guests" required>
+                <option>1 guest</option>
+                <option selected>2 guests</option>
+                <option>3 guests</option>
+                <option>4 guests</option>
+                <option>5 guests</option>
+                <option>6 guests</option>
+                <option>7 guests</option>
+                <option>8 guests</option>
+              </select>
+            </div>
+
+            <fieldset class="chip-group full">
+              <legend>Available times *</legend>
+              <label class="chip"><input type="radio" name="time" disabled><span>5:00 PM</span></label>
+              <label class="chip"><input type="radio" name="time"><span>5:30 PM</span></label>
+              <label class="chip"><input type="radio" name="time"><span>6:00 PM</span></label>
+              <label class="chip"><input type="radio" name="time" disabled><span>6:30 PM</span></label>
+              <label class="chip"><input type="radio" name="time" checked><span>7:00 PM</span></label>
+              <label class="chip"><input type="radio" name="time"><span>7:30 PM</span></label>
+              <label class="chip"><input type="radio" name="time" disabled><span>8:00 PM</span></label>
+              <label class="chip"><input type="radio" name="time"><span>8:30 PM</span></label>
+              <label class="chip"><input type="radio" name="time"><span>9:00 PM</span></label>
+            </fieldset>
+
+            <fieldset class="chip-group full">
+              <legend>Seating preference</legend>
+              <label class="chip"><input type="radio" name="seat" checked><span>No preference</span></label>
+              <label class="chip"><input type="radio" name="seat"><span>Indoor</span></label>
+              <label class="chip"><input type="radio" name="seat"><span>Terrace</span></label>
+              <label class="chip"><input type="radio" name="seat"><span>Chef's counter</span></label>
+            </fieldset>
+
+            <div class="field">
+              <label for="name">Full name *</label>
+              <input id="name" type="text" placeholder="e.g. Somchai Jaidee" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone *</label>
+              <input id="phone" type="tel" placeholder="+66 81 234 5678" autocomplete="tel" required>
+            </div>
+            <div class="field full">
+              <label for="email">Email *</label>
+              <input id="email" type="email" placeholder="you@email.com" autocomplete="email" required>
+              <div class="hint">We'll send your confirmation here.</div>
+            </div>
+
+            <fieldset class="chip-group full">
+              <legend>Occasion</legend>
+              <label class="chip"><input type="checkbox"><span>🎂 Birthday</span></label>
+              <label class="chip"><input type="checkbox"><span>💍 Anniversary</span></label>
+              <label class="chip"><input type="checkbox"><span>💼 Business</span></label>
+              <label class="chip"><input type="checkbox"><span>🥂 Celebration</span></label>
+            </fieldset>
+
+            <div class="field full">
+              <label for="notes">Special requests</label>
+              <textarea id="notes" placeholder="Allergies, dietary needs, high chair, accessibility…"></textarea>
+            </div>
+
+            <div class="full" style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between">
+              <label style="display:flex;gap:8px;align-items:center;font-size:.9rem;color:var(--muted)">
+                <input type="checkbox" checked> Send me seasonal menu updates
+              </label>
+              <button type="submit" class="btn btn--primary">Confirm Reservation</button>
+            </div>
+          </div>
+        </form>
+
+        <aside class="side-card" aria-label="Booking summary">
+          <h3>Your booking</h3>
+          <ul>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Saturday, 24 October 2026</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>7:00 PM</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg>2 guests · No preference</li>
+          </ul>
+          <hr>
+          <h3>Opening hours</h3>
+          <table class="hours-table">
+            <tr><td>Tue – Thu</td><td>5:00 – 10:00 PM</td></tr>
+            <tr><td>Fri – Sat</td><td>5:00 – 11:00 PM</td></tr>
+            <tr><td>Sunday</td><td>11:00 AM – 9:00 PM</td></tr>
+            <tr><td>Monday</td><td>Closed</td></tr>
+          </table>
+          <hr>
+          <p style="font-size:.9rem;color:rgba(255,255,255,.75);margin:0">Tables are held for 15 minutes. Free cancellation up to 24 hours before. Questions? Call <strong style="color:#fff">+66 2 123 4567</strong>.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container split">
+        <img class="split-img" style="aspect-ratio:4/3" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=70&auto=format&fit=crop" alt="Long table set for a private dinner">
+        <div>
+          <span class="eyebrow">Private Dining</span>
+          <h2>Gather around the hearth</h2>
+          <p class="lead">Our private room seats up to 24 guests, with a set tasting menu and wine pairing designed with our chef and sommelier.</p>
+          <a href="contact.html" class="btn btn--primary">Enquire About Events</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo">Ember <span>&amp;</span> Sage</a>
+          <p style="margin-top:12px">Modern wood-fired kitchen serving seasonal plates and natural wine since 2014.</p>
+          <div class="socials">
+            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V2c1 3 3 5 6 5"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <ul>
+            <li>Tue – Thu: 5 – 10 PM</li>
+            <li>Fri – Sat: 5 – 11 PM</li>
+            <li>Sun: 11 AM – 9 PM</li>
+            <li>Mon: Closed</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <p>Seasonal menus &amp; events, once a month.</p>
+          <form class="newsletter" onsubmit="return false">
+            <label for="nl-email" class="sr-only">Email address</label>
+            <input id="nl-email" type="email" placeholder="you@email.com">
+            <button class="btn btn--primary" type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Ember &amp; Sage. All rights reserved.</span>
+        <span>124 Riverside Lane, Old Town, Bangkok · +66 2 123 4567</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
