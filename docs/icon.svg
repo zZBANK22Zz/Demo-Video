@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6B4FE0"/><stop offset="1" stop-color="#3F2A9E"/></linearGradient></defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <!-- browser window -->
+  <rect x="172" y="232" width="680" height="520" rx="48" fill="#FFFFFF"/>
+  <path d="M172 280a48 48 0 0 1 48-48h584a48 48 0 0 1 48 48v40H172z" fill="#E7E2FB"/>
+  <circle cx="226" cy="276" r="14" fill="#F04438"/><circle cx="270" cy="276" r="14" fill="#F79009"/><circle cx="314" cy="276" r="14" fill="#12B76A"/>
+  <!-- play button -->
+  <circle cx="512" cy="536" r="132" fill="#5B3FD1"/>
+  <path d="M472 466 L602 536 L472 606 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="16" stroke-linejoin="round"/>
+  <!-- click ripple + cursor -->
+  <circle cx="700" cy="690" r="62" fill="none" stroke="#5B3FD1" stroke-width="12" opacity="0.55"/>
+  <path d="M700 690 L700 870 L746 826 L780 900 L816 884 L782 810 L846 806 Z" fill="#13233A" stroke="#FFFFFF" stroke-width="18" stroke-linejoin="round"/>
+</svg>
