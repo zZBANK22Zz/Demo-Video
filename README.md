@@ -3,6 +3,10 @@
 A [Claude Code](https://claude.com/claude-code) skill that turns a user journey through your app into a calm,
 captioned demo video, and regenerates it with one command after the UI changes.
 
+> **Requires Claude Code on macOS.** It doesn't work in Claude Chat (claude.ai): skills there run in
+> a cloud Linux sandbox that can't reach your app, simulators or browser, and captions are rendered
+> with macOS CoreText.
+
 ![Demo: booking a table on a restaurant website, recorded and edited by the skill](docs/demo.gif)
 
 *Excerpt from a demo of a mock restaurant website. The skill wrote the journey, recorded it and
